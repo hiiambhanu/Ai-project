@@ -26,12 +26,12 @@ html{
   color: #61dafb;
 }
 
-
 .search > input{
   margin-top: 2em;
   width: 60vw;
   border-radius: 5px 5px 0 0;
   padding: 15px;
+  
 }
 
 .btn{
@@ -134,6 +134,7 @@ li{
 .songCard:hover{
   background-color: #1ed760; 
   transition: all 0.5s ease;
+  box-shadow: 5px 6px #800000;
 }
 
 
