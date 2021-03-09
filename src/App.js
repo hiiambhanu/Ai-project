@@ -15,7 +15,7 @@ function App() {
       return;
     }
     document.getElementById("error").style.display = "none";
-
+    changeResults([]);
     fetch(`https://music-recommender-ai.herokuapp.com/api/search?q=${inp}`, {
       method: "GET",
     })
@@ -101,7 +101,11 @@ function App() {
             letterSpacing:"2px"
           }}
           onClick={() => {
+            changeResults([]);
+            changeList([]);
             document.getElementById("Loading").style.display = "flex";
+            document.getElementById("magic").style.display = "none";
+            document.getElementById("error").style.display = "none";
             console.log(inp, method);
             if (method === true) {
               fetch(
