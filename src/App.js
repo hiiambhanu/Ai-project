@@ -15,7 +15,9 @@ function App() {
     }
     document.getElementById("error").style.display = "none";
 
-    fetch(`https://music-recommender-ai.herokuapp.com/api/search?q=${inp}`, {
+    var methodName = method === true? "content" : "collab";
+
+    fetch(`https://music-recommender-ai.herokuapp.com/api/${methodName}/search?q=${inp}`, {
       method: "GET",
     })
       .then((blob) => blob.json())
@@ -86,6 +88,7 @@ function App() {
               type="checkbox"
               onChange={(e) => {
                 changeMethod(e.target.checked);
+                changeList([]);
               }}
             />
             <span className="slider round"></span>
