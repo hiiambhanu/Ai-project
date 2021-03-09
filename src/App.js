@@ -69,7 +69,7 @@ function App() {
               marginTop: 0,
             }}
           >
-            {list.slice(0, 5).map((li) => (
+            {list.map((li) => (
               <SongCard
                 name={li}
                 onClick={() => {
@@ -166,6 +166,9 @@ function App() {
           <h1 style={{ textAlign: "center" }} id="magic">
             Your Recommendations are:
           </h1>
+          {/* <h3 id="magic">
+            Track
+          </h3> */}
 
           <ul>
             {results.length > 0

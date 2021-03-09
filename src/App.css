@@ -11,6 +11,17 @@ html{
   pointer-events: none;
 }
 
+.musicLogo svg {
+  height: 4vmin;
+  width: 4vmin;
+  margin-right: 0.2em;
+  fill:white;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
 .App-header {
   background-color: #000;
   min-height: 100vh;
@@ -129,6 +140,8 @@ li{
 
 .songCard{
   padding: 0.2em;
+  display: flex;
+  flex-direction: row;
 }
 
 .songCard:hover{
