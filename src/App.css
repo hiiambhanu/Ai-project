@@ -26,12 +26,12 @@ html{
   color: #61dafb;
 }
 
-
 .search > input{
   margin-top: 2em;
   width: 60vw;
   border-radius: 5px 5px 0 0;
   padding: 15px;
+  
 }
 
 .btn{
@@ -134,4 +134,30 @@ li{
 .songCard:hover{
   background-color: #1ed760; 
   transition: all 0.5s ease;
+  box-shadow: 5px 6px #800000;
+}
+
+
+
+.loader {
+  margin: 1em;
+  display: block;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #1db954; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  float: right;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
+
+
+a{
+  color: white;
+  text-decoration: none;
 }

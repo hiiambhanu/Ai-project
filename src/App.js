@@ -1,6 +1,7 @@
 import "./App.css";
 import SongCard from "./components/SongCard";
 import { useEffect, useState, useRef } from "react";
+import SongResultCard from "./components/SongResultCard";
 
 function App() {
   let [inp, changeInp] = useState("");
@@ -98,7 +99,16 @@ function App() {
         <button
           type="button"
           className="btn"
+          style={{
+            fontWeight:"700",
+            letterSpacing:"2px"
+          }}
           onClick={() => {
+            changeResults([]);
+            changeList([]);
+            document.getElementById("Loading").style.display = "flex";
+            document.getElementById("magic").style.display = "none";
+            document.getElementById("error").style.display = "none";
             console.log(inp, method);
             if (method === true) {
               fetch(
@@ -108,6 +118,8 @@ function App() {
               )
                 .then((blob) => blob.json())
                 .then((data) => {
+            document.getElementById("Loading").style.display = "none";
+
                   if (data.error) {
                     changeResults([]);
                     document.getElementById("error").style.display = "block";
@@ -125,6 +137,8 @@ function App() {
               )
                 .then((blob) => blob.json())
                 .then((data) => {
+                  document.getElementById("Loading").style.display = "none";
+
                   if (data.error) {
                     changeResults([]);
                     document.getElementById("error").style.display = "block";
@@ -141,6 +155,11 @@ function App() {
           Find your next favourite song
         </button>
         <div>
+          <div style={{ textAlign: "center", display:"none", alignItems:"center" }} id="Loading">
+
+            <h3> Getting Results, please wait</h3> 
+            <div class="loader"></div> 
+          </div>
           <h1 style={{ textAlign: "center", display: "none" }} id="error">
             Sorry an error occured
           </h1>
@@ -151,7 +170,7 @@ function App() {
           <ul>
             {results.length > 0
               ? results.map((result) => (
-                  <SongCard name={result.name}></SongCard>
+                  <SongResultCard name={result.name}></SongResultCard>
                 ))
               : ""}
           </ul>
