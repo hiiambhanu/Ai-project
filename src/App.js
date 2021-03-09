@@ -96,6 +96,10 @@ function App() {
         <button
           type="button"
           className="btn"
+          style={{
+            fontWeight:"700",
+            letterSpacing:"2px"
+          }}
           onClick={() => {
             document.getElementById("Loading").style.display = "flex";
             console.log(inp, method);
