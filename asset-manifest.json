@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Ai-project/static/css/main.1a34e870.chunk.css",
-    "main.js": "/Ai-project/static/js/main.33429e40.chunk.js",
-    "main.js.map": "/Ai-project/static/js/main.33429e40.chunk.js.map",
+    "main.css": "/Ai-project/static/css/main.24fa2314.chunk.css",
+    "main.js": "/Ai-project/static/js/main.7008f535.chunk.js",
+    "main.js.map": "/Ai-project/static/js/main.7008f535.chunk.js.map",
     "runtime-main.js": "/Ai-project/static/js/runtime-main.1ca92cb8.js",
     "runtime-main.js.map": "/Ai-project/static/js/runtime-main.1ca92cb8.js.map",
     "static/js/2.532b0def.chunk.js": "/Ai-project/static/js/2.532b0def.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.82a54803.chunk.js": "/Ai-project/static/js/3.82a54803.chunk.js",
     "static/js/3.82a54803.chunk.js.map": "/Ai-project/static/js/3.82a54803.chunk.js.map",
     "index.html": "/Ai-project/index.html",
-    "static/css/main.1a34e870.chunk.css.map": "/Ai-project/static/css/main.1a34e870.chunk.css.map",
+    "static/css/main.24fa2314.chunk.css.map": "/Ai-project/static/css/main.24fa2314.chunk.css.map",
     "static/js/2.532b0def.chunk.js.LICENSE.txt": "/Ai-project/static/js/2.532b0def.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1ca92cb8.js",
     "static/js/2.532b0def.chunk.js",
-    "static/css/main.1a34e870.chunk.css",
-    "static/js/main.33429e40.chunk.js"
+    "static/css/main.24fa2314.chunk.css",
+    "static/js/main.7008f535.chunk.js"
   ]
 }
