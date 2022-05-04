@@ -18,7 +18,7 @@ function App() {
 
     var methodName = method === true? "content" : "collab";
 
-    fetch(`https://music-recommender-ai.herokuapp.com/api/${methodName}/search?q=${inp}`, {
+    fetch(`https://music-recommender-ai.herokuapp.com/api/search?q=${inp}`, {
       method: "GET",
     })
       .then((blob) => blob.json())
